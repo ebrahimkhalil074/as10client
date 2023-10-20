@@ -18,8 +18,7 @@ const {name, brand,type,description,price,rating,image,_id} =y ||{}
         
          const updateProduct ={name, brand,type,description,price,rating,image}
        
-         fetch(`https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
-ils-projects.vercel.app/brands/${_id}`,{
+         fetch(`https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/brands/${_id}`,{
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

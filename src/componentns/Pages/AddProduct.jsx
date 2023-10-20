@@ -31,7 +31,7 @@ const image = form.image.value
 //    console.log(data);
 //     form.reset()
 // })
- fetch("https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/brands",{
+ fetch("https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/brands",{
     method: "POST",
     headers: {
         "Content-Type": "application/json",

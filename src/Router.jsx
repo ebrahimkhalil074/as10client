@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         },
         {
             path:'/brands/:id',
-            loader:({params})=> fetch(`https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/brands/${params.id}`),
+            loader:({params})=> fetch(`https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/brands/${params.id}`),
             element:<PrivateRoute>
               <Update></Update>
             </PrivateRoute>
@@ -51,14 +51,14 @@ const router = createBrowserRouter([
             element:<PrivateRoute>
               <MyCart></MyCart>
             </PrivateRoute>,
-            loader:()=> fetch("https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/carts")
+            loader:()=> fetch("https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/carts")
         },
         {
           path:'/products/:brand',
           element:
             <CategoryData></CategoryData>
           ,
-          loader:()=> fetch("https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/brands")
+          loader:()=> fetch("https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/brands")
         },
       
         {
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
           element:<PrivateRoute>
             <Details></Details>
           </PrivateRoute>,
-          loader:({params})=> fetch(`https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/brands/${params.id}`)
+          loader:({params})=> fetch(`https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/brands/${params.id}`)
         }
       ]
     },

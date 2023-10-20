@@ -5,7 +5,7 @@ import Category from "./Category";
 const Categories = () => {
 const [allCategories,setAllCategories]=useState(null)
 useEffect(()=>{
-    fetch("https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/products")
+    fetch("https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/products")
     .then(res => res.json())
     .then(data =>setAllCategories(data))
     },[])

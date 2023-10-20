@@ -1,9 +1,21 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "./Pages/AuthProvider";
 
 const Navbar = () => {
   const {user, LogOut}=useContext(AuthContext)
+  const [theme,setTheme]=useState("light")
+
+useEffect(()=>{
+if(theme =="dark") {
+  document.documentElement.classList.add("dark")
+} else {
+  document.documentElement.classList.remove("dark") 
+}
+},[theme])
+const handelTheme=()=>{
+  setTheme(true &&theme=="dark"?"light":"dark")
+}
     const navLinks=<div className="flex gap-10">
    <li> <NavLink to="/">Home</NavLink></li>
     
@@ -15,6 +27,7 @@ const Navbar = () => {
    <li> <NavLink to="/login">Login</NavLink></li>
     <li><NavLink to="/register">Register</NavLink>
     </li>
+    <li onClick={handelTheme}><Link>{theme =="dark"?"light":"dark"}</Link></li>
     </div>
 const handelLogOut=()=>{
   LogOut()

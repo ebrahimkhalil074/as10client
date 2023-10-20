@@ -5,7 +5,7 @@ import Footer from "./componentns/Footer";
 
 const Route = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto dark:bg-black">
             <Navbar></Navbar>
            <Outlet></Outlet> 
            <Footer></Footer>

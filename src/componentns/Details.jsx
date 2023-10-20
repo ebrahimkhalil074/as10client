@@ -7,7 +7,7 @@ const Details = () => {
     }=loadedData||{}
 
 const handelAddCart =()=>{
-      fetch("https://assaignment-ten-server-ljybtv5j1-md-ebrahim-khalils-projects.vercel.app/carts",{
+      fetch("https://assaignment-ten-server-jc3bxq511-md-ebrahim-khalils-projects.vercel.app/carts",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
