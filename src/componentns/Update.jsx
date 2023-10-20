@@ -18,7 +18,8 @@ const {name, brand,type,description,price,rating,image,_id} =y ||{}
         
          const updateProduct ={name, brand,type,description,price,rating,image}
        
-         fetch(`http://localhost:3000/brands/${_id}`,{
+         fetch(`https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
+ils-projects.vercel.app/brands/${_id}`,{
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -30,7 +31,8 @@ const {name, brand,type,description,price,rating,image,_id} =y ||{}
            console.log(data);
            
         })
-        //  fetch("http://localhost:3000/brands",{
+        //  fetch("https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
+// ils-projects.vercel.app/brands",{
         //     method: "POST",
         //     headers: {
         //         "Content-Type": "application/json",

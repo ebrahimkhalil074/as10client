@@ -18,7 +18,8 @@ const image = form.image.value
 //  const product ={name, brand,type,description,price,rating,image}
 // console.log(product);
  console.log(brands);
-//  fetch("http://localhost:3000/products",{
+//  fetch("https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
+// ils-projects.vercel.app/products",{
 //     method: "POST",
 //     headers: {
 //         "Content-Type": "application/json",
@@ -30,7 +31,7 @@ const image = form.image.value
 //    console.log(data);
 //     form.reset()
 // })
- fetch("http://localhost:3000/brands",{
+ fetch("https://assaignment-ten-server-2m95fvaym-md-ebrahim-khalils-projects.vercel.app/brands",{
     method: "POST",
     headers: {
         "Content-Type": "application/json",

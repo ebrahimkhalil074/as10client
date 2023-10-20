@@ -41,7 +41,8 @@ const router = createBrowserRouter([
         },
         {
             path:'/brands/:id',
-            loader:({params})=> fetch(`http://localhost:3000/brands/${params.id}`),
+            loader:({params})=> fetch(`https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
+ils-projects.vercel.app/brands/${params.id}`),
             element:<PrivateRoute>
               <Update></Update>
             </PrivateRoute>
@@ -51,17 +52,22 @@ const router = createBrowserRouter([
             element:<PrivateRoute>
               <MyCart></MyCart>
             </PrivateRoute>,
-            loader:()=> fetch("http://localhost:3000/carts")
+            loader:()=> fetch("https://assaignment-ten-server-2m95fvaym-md-ebrahim-khalils-projects.vercel.app/carts")
         },
         {
           path:'/products/:brand',
-          element:<CategoryData></CategoryData>,
-          loader:()=> fetch("http://localhost:3000/brands")
+          element:
+            <CategoryData></CategoryData>
+          ,
+          loader:()=> fetch("https://assaignment-ten-server-2m95fvaym-md-ebrahim-khalils-projects.vercel.app/brands")
         },
         {
           path:"/details/:id",
-          element:<Details></Details>,
-          loader:({params})=> fetch(`http://localhost:3000/brands/${params.id}`)
+          element:<PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>,
+          loader:({params})=> fetch(`https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
+ils-projects.vercel.app/brands/${params.id}`)
         }
       ]
     },

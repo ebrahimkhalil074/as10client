@@ -6,7 +6,8 @@ const CartAdd = ({item}) => {
 
 const handelDelete =(id)=>{
 console.log(id);
-fetch(`http://localhost:3000/carts/${id}`,{
+fetch(`https://assaignment-ten-server-2m95fvaym-md-ebrahim-khal
+ils-projects.vercel.app/carts/${id}`,{
   method:"DELETE"
 })
 .then(res => res.json())
