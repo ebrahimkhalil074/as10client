@@ -41,7 +41,7 @@ const handelLogOut=()=>{
 {navLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a className="btn btn-ghost normal-case text-xl">Phone<span className="text-red-600 text-4xl">S</span>hop</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
