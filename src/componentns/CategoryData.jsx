@@ -1,5 +1,4 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import Slide from "./Slide";
 import Slider from "./Slider";
 import Product from "./Product";
 
